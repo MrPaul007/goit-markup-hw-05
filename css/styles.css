@@ -187,7 +187,8 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-item:hover svg {
+.address-item:hover svg,
+.address-item:focus svg {
     fill: var(--accent-color);
 }
 
