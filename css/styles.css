@@ -1,0 +1,269 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+  
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;    ;
+    --primary-white-color:#ffffff;
+    --background-section-color:#2F303A;
+    --icon-color: #AFB1B8;
+}
+
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding: 0 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+/* ===================== HEADER ===================== */
+
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    border-bottom: 1px solid #ECECEC;
+    
+}
+
+.logo-header {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    word-spacing: -1ch;
+    font-family: raleway, sans-serif;
+    text-decoration: none;
+    margin-right: 94px;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+.logo-studio {
+    color: var(--title-text-color);
+}
+
+.menu {
+    color: var(--title-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    margin-right: -50px;
+}
+
+.menu .item {
+    margin-right: 50px;
+}
+
+.link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.address-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;  
+  fill: #757575;
+}
+
+.address {
+    display: flex;
+    margin-left: -50px;
+}
+
+.address-item {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    font-style: normal;
+    margin-left: 50px;
+    display: inline-flex;
+}
+
+.address-item:hover svg {
+    fill: var(--accent-color);
+}
+
+h2, h3 {
+    color: var(--title-text-color);
+}
+
+a:hover,
+a:focus {
+    color: var(--accent-color);
+}
+
+button:hover,
+button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+footer {
+    background: var(--background-section-color);
+}
+
+.footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 60px 15px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+}
+
+.footer-address {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.location {
+    color: var(--primary-white-color);
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.footer-mail {
+    margin-bottom: 9px;
+}
+
+.logo-footer {
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    word-spacing: -1ch;
+}
+
+.studio-footer {
+    color: var(--primary-white-color);
+    word-spacing: -1ch;
+}
+
+.link-container {
+    margin-left: 70px;
+}
+
+.link-container h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    color: var(--primary-white-color);
+}
+
+
+.footer-socials {
+    display: flex;
+    
+}
+
+.social-frame-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 11px 11px;
+    margin-right: 10px; 
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-frame-link:hover,
+.social-frame-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-frame-link .social-icon {
+    fill: var(--primary-white-color);
+} 
+
+.curent {
+    color: var(--accent-color);
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
