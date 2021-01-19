@@ -57,7 +57,7 @@
       <section class="hero">
         <div class="container">
           <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--переваги-->
@@ -133,6 +133,9 @@
               width="370"
               height="294"
             />
+            <div class="work-examples-description">
+              <p class="work-examples-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+            </div>
           </li>
 
           <li class="item">
@@ -142,6 +145,9 @@
               width="370"
               height="294"
             />
+            <div class="work-examples-description">
+              <p class="work-examples-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+            </div>
           </li>
 
           <li class="item">
@@ -151,6 +157,9 @@
               width="370"
               height="294"
             />
+            <div class="work-examples-description">
+              <p class="work-examples-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+            </div>
           </li>
         </ul>
         </div>
@@ -160,7 +169,7 @@
         <div class="container">
           <h2>Наша команда</h2>
           <ul class="team-list list">
-            <li class="item">
+            <li class="team-item">
               <img
                 src="./images/team1.jpg"
                 alt="фото Игоря"
@@ -201,7 +210,7 @@
               </ul>
             </li>
 
-            <li class="item">
+            <li class="team-item">
               <img
                 src="./images/team2.jpg"
                 alt="фото Ольги"
@@ -241,7 +250,7 @@
                 </li>
               </ul>
             </li>
-            <li class="item">
+            <li class="team-item">
               <img
                 src="./images/team3.jpg"
                 alt="фото Николая"
@@ -282,7 +291,7 @@
               </ul>
             </li>
 
-            <li class="item">
+            <li class="team-item">
               <img
                 src="./images/team4.jpg"
                 alt="фото Михаила"
@@ -436,5 +445,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-svg">
+            <use href="./images/sprite.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
